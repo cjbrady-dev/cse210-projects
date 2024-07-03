@@ -2,8 +2,8 @@ using System.Globalization;
 
 public class Fraction
 {
-    private int _topNum;
-    private int _bottomNum;
+    private double _topNum;
+    private double _bottomNum;
 
     public Fraction()
     {
@@ -12,24 +12,24 @@ public class Fraction
 
 
     }
-    public int Numerator
+    public double Numerator
     {
         get { return _topNum; }
         set {_topNum = value; }
     }
-    public int Denominator
+    public double Denominator
     {
         get { return _bottomNum; }
         set { _bottomNum = value; }
     }
     
-    public Fraction(int bottom)
+    public Fraction(double bottom)
     {
         _topNum = 1;
         _bottomNum = bottom;
 
     }
-        public  Fraction(int top, int bottom)
+        public  Fraction(double top, double bottom)
     {
         _topNum = top;
         _bottomNum = bottom;
@@ -44,12 +44,10 @@ public string GetFractionString()
 {
     return $"{_topNum}/{_bottomNum}";
 }
-public void Display()
+public void displayDecimal(double num1)
 {
-    Console.WriteLine(GetFractionString());
+    Console.WriteLine($"{num1}");
 }
-
-
 
 
 }
