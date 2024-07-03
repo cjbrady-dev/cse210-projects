@@ -26,8 +26,6 @@ class Program
         
         
         
-        F1.Display();
-        F2.Display();
-        F3.Display();
+
     }
 }
