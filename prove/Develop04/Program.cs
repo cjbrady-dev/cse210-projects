@@ -4,31 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop04 World!");
+        Console.WriteLine("Welcome to Mindfulness.");
 
         switch (choice)
             {
                 case "1":
-                    Console.Write("Enter your response: ");
+                    Console.Write("Start breathing activity: ");
                     string response = Console.ReadLine();
-                    journal.AddEntry(response);
                     break;
                 case "2":
-                    journal.DisplayEntries();
+                    Console.Write("Start reflecting activity: ");
                     break;
                 case "3":
-                    Console.Write("Enter filename to save: ");
+                    Console.Write("Start listing activity: ");
                     string saveFilename = Console.ReadLine();
-                    journal.SaveToFile(saveFilename);
                     break;
                 case "4":
-                    Console.Write("Enter filename to load: ");
-                    string loadFilename = Console.ReadLine();
-                    journal.LoadFromFile(loadFilename);
+                       exit = true;
                     break;
-                case "5":
-                    exit = true;
-                    break;
+
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;

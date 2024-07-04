@@ -1,3 +1,31 @@
+List<string> _prompts = new List<string>();
+List<string> _questions = new List<string>();
+
+
+public void ReflectingActivity(){
+
+}
+public void Run()
+{
+
+}
+public string GetRandomPrompt()
+{
+
+}
+public string GetRandomQuestion()
+{
+
+}
+public void DisplayPrompt()
+{
+
+}
+public void DisplayQuestions()
+{
+
+}
+
 // The activity should begin with the standard starting message and prompt for the duration that is used by all activities.
 // The description of this activity should be something like: "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life."
 // After the starting message, select a random prompt to show the user such as:
