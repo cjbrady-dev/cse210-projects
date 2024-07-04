@@ -5,6 +5,19 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Welcome to Mindfulness.");
+        
+        bool exit = false;
+
+        while (!exit)
+        {
+            Console.WriteLine("Menu:");
+            Console.WriteLine("Please choose one of the following items:");
+            Console.WriteLine("1. Display the journal");
+            Console.WriteLine("2. Save the journal to a file");
+            Console.WriteLine("3. Load the journal from a file");
+            Console.WriteLine("4. Exit");
+            Console.Write("Choose an option: ");
+            string choice = Console.ReadLine();
 
         switch (choice)
             {
@@ -28,6 +41,7 @@ class Program
                     break;
             }
     }
+}
 }
 
 // Have a menu system to allow the user to choose an activity.

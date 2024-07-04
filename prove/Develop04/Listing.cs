@@ -1,15 +1,26 @@
-class BreathingActivity : Activity
-{
-    public BreathingActivity()
-    {
+class ListingActivity()
 
-    }
-    public void Run()
+{
+    private int _count;
+    private List<string> _prompts = new List<string>();
+
+    public ListingActivity()
     {
         
     }
-}
+    public void Run()
+    {
 
+    }
+    public void GetRandomPrompt()
+    {
+
+    }
+    public List<string> GetListFromUser()
+    {
+
+    }
+}
 // The activity should begin with the standard starting message and prompt for the duration that is used by all activities.
 // The description of this activity should be something like: "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area."
 // After the starting message, select a random prompt to show the user such as:

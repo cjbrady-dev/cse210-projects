@@ -2,6 +2,19 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name>.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}prove/Develop04/Program.cs.dll",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+      
+        },
 
         {
             "name": "Sandbox Project",
