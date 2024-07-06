@@ -1,7 +1,12 @@
 class BreathingActivity : Activity
 {
+    
     public BreathingActivity()
     {
+    Console.WriteLine("Welcome to the Listing Activity");
+    Console.WriteLine("This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+    Console.Write("How long, in seconds, would you like for your session?");
+
 
     }
     public void Run()

@@ -6,11 +6,18 @@ class ListingActivity()
 
     public ListingActivity()
     {
-        
+        _name = "Listing Activity";
+        _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
     }
     public void Run()
     {
+        DisplayStartingMessage();
 
+        string prompt = GetRandomPrompt();
+        Console.WriteLine(prompt);
+        ShowSpinner(5);
+
+        
     }
     public void GetRandomPrompt()
     {

@@ -4,44 +4,40 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to Mindfulness.");
-        
-        bool exit = false;
-
-        while (!exit)
+        while(true)
         {
-            Console.WriteLine("Menu:");
-            Console.WriteLine("Please choose one of the following items:");
-            Console.WriteLine("1. Display the journal");
-            Console.WriteLine("2. Save the journal to a file");
-            Console.WriteLine("3. Load the journal from a file");
-            Console.WriteLine("4. Exit");
-            Console.Write("Choose an option: ");
-            string choice = Console.ReadLine();
+            Console.WriteLine("Menu Options: ");
+            Console.WriteLine("1. Start breathing activity");
+            Console.WriteLine("2. Start reflecting activity");
+            Console.WriteLine("3. Start listing activity");
+            Console.WriteLine("4. Quit");
+            Console.WriteLine("Select a choice from the menu: ");
 
-        switch (choice)
+            string input = Console.WriteLine();
+
+            switch(input)
             {
                 case "1":
-                    Console.Write("Start breathing activity: ");
-                    string response = Console.ReadLine();
-                    break;
+                    Console.WriteLine("Start breathing activity...");
+                break;
                 case "2":
-                    Console.Write("Start reflecting activity: ");
-                    break;
+                    Console.WriteLine("Start reflecting activity...");
+                break;
                 case "3":
-                    Console.Write("Start listing activity: ");
-                    string saveFilename = Console.ReadLine();
-                    break;
+                    Console.WriteLine("Start listing activity...");
+                break;
                 case "4":
-                       exit = true;
-                    break;
-
+                    Console.WriteLine("Exiting...");
+                break;
                 default:
-                    Console.WriteLine("Invalid choice. Please try again.");
-                    break;
+                    Console.WriteLine("Invalid entry, please try again.");
+                break;
+
             }
+        }
+
+
     }
-}
 }
 
 // Have a menu system to allow the user to choose an activity.
